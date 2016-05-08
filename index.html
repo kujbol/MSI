@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/bars-reversed.css">
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.barrating.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#example-reversed').barrating({
+                theme: 'bars-reversed',
+                initialRating: 5,
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div class="box box-green box-example-reversed">
+        <div class="box-header" id="question-number">Numer pytania i co się kurwa patrzysz</div>
+        <div class="box-body">
+            <H1 class="question-title" id="question-title">Tytuł pytania</H1>
+
+            <select id="example-reversed" name="rating">
+                <option value="10">Mocno się zgadzam</option>
+                <option value="9">Mocno się zgadzam</option>
+                <option value="8">Zgadzam się</option>
+                <option value="7">Zgadzam się</option>
+                <option value="6">Mam ambiwalentne uczucia</option>
+                <option value="5">Mam ambiwalentne uczucia</option>
+                <option value="4">Mam ambiwalentne uczucia</option>
+                <option value="3">Nie zgadzam się</option>
+                <option value="2">Nie zgadzam się</option>
+                <option value="1">Mocno się nie zgadzam</option>
+                <option value="0">Mocno się nie zgadzam</option>
+            </select>
+        </div>
+    </div>
+</body>
+</html>
